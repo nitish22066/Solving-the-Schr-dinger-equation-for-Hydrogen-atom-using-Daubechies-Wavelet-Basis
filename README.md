@@ -1,10 +1,1 @@
-# Solving the Schrödinger equation for the Hydrogen atom using Daubechies Wavelet Basis
-This project deals with solving the Schrodinger equation of a hydrogen atom in Cartesian form using
-Daubechies wavelet basis. Doing so, this problem becomes an eigenvalue
-problem ,where eigenvalues are the energy levels of the the system,whereas
-the eigenvectors are the coefficients of the wavelet basis functions using which,
-we can reconstruct the wave function. The number of eigenvalues obtained or
-the size of the Hamiltonian matrix will depend on the domain chosen, i.e the
-range of position coordinates , along x,y and z axis that can be spanned by
-the basis set. The lowest eigenvalue corresponds to ground state energy,where
-on taking h and m as 1, we get the value as -0.5Ha.
+The project involves representing the wavefunction as a linear combination of product of wavelets along the x, y and z direction, and constructing the real symmetric Hamiltonian matrix in wavelet basis. The potential, which is in terms of 1/r is represented as a sum of gaussians, and the kinetic energy elements are calculated using overlap integrals. I have calculated the energy eigenvalues for a small range of x, y and z using Daubechies wavelets of level 3 have been obtained, and my current work lies in using high performance cluster, where I can increase my number of grid points, the range and order of Daubechies wavelet for a higher accuracy in results
